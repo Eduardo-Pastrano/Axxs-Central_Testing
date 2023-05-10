@@ -14,9 +14,15 @@ li {
 }
 
 body {
-    background-color: #f0f0f0;
+    background-color: $body-color;
 }
 
 header {
-    
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $header-color;
+    z-index: 999;
+
 }
