@@ -35,24 +35,43 @@ nav {
                 border-radius: 0 0 20px 20px;
                 box-shadow: 0 23px 23px -21px rgb(0, 0, 0, 0.25);
                 z-index: -99;
-                /* visibility: hidden; */
-                /* opacity: 0; */
+                visibility: hidden;
+                opacity: 0;
 
                 .content {
                     display: flex;
                     flex-direction: column;
                     padding: 1rem 1rem;
 
-                    .megamenu_item {
-                        display: flex;
-                        align-items: center;
-                        margin-bottom: 1rem;
-                    }
-
                     .header_megamenu {
                         font-weight: 600;
                         color: $black-25;
                         margin-bottom: 1rem;
+                    }
+
+                    .megamenu_item {
+                        display: flex;
+                        align-items: center;
+                        margin-bottom: 1rem;
+
+                        .megamenu_link {
+
+                            a {
+                                font-weight: 500;
+                                color: $font-color;
+                                transition: 1s ease-out;
+                            }
+
+                            a:hover {
+                                color: $nav-hover-color;
+                            }
+
+                            p {
+                                font-size: 0.6875rem;
+                                font-weight: 400;
+                                color: $black-25;
+                            }
+                        }
                     }
                 }
             }
@@ -71,6 +90,12 @@ nav {
                 display: flex;
                 align-items: center;
             }
+        }
+
+        .dropdown:hover .megamenu {
+            visibility: visible;
+            transition: all 0.3s ease;
+            opacity: 1;
         }
     }
 
