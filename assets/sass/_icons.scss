@@ -1,9 +1,6 @@
 .menu_icon {
     width: 32px;
     height: 32px;
-    border-radius: 50%;
-    text-align: center;
-    background-color: $icon-background;
     color: $font-color;
     margin-right: 0.5rem;
 
@@ -11,4 +8,27 @@
         line-height: 32px;
         font-size: 22px;
     }
+}
+
+.toggle_menu,
+.close_menu {
+    display: block;
+    font-size: 2rem;
+
+    @media (min-width: 768px) {
+        display: none;
+    }
+}
+
+.toggle_menu {
+    i:active {
+        color: $nav-hover-color;
+    }
+}
+
+.close_menu {
+    margin: 1rem 1rem 1rem auto;
+    padding-top: 4.5px;
+    width: 32px;
+    height: 32px;
 }

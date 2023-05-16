@@ -20,20 +20,21 @@
                 </a>
             </div>
             <!--Toggle menu button for smaller screens-->
-            <div class="toggle_menu">
+            <div class="toggle_menu" id="toggle-menu">
                 <i class='bx bx-menu'></i>
             </div>
             <!--Toggle menu button for smaller screens-->
-            <ul class="nav_list">
-                <div class="close_menu">
+            <ul class="nav_list" id="nav-menu">
+                <div class="close_menu" id="close-menu">
                     <i class='bx bx-x'></i>
                 </div>
-                <li class="nav_item dropdown">
+                <!-- Why dropdown -->
+                <li class="nav_item nav_item_title dropdown">
                     <a href="#" class="nav_link dropdown_link">Why</a>
 
                     <div class="megamenu">
                         <ul class="content">
-                            <li class="megamenu_item header_megamenu">Why?</li>
+                            <li class="megamenu_item header_megamenu"></li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
@@ -67,7 +68,7 @@
                         </ul>
 
                         <ul class="content">
-                            <li class="megamenu_item header_megamenu">Get to know us!</li>
+                            <li class="megamenu_item header_megamenu"></li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
@@ -91,14 +92,16 @@
                         </ul>
                     </div>
                 </li>
+                <!-- Why dropdown -->
 
-                <li class="nav_item dropdown">
+                <!-- Industries dropdown -->
+                <li class="nav_item nav_item_title dropdown">
                     <a href="#" class="nav_link dropdown_link">Industries
                     </a>
 
                     <div class="megamenu">
                         <ul class="content">
-                            <li class="megamenu_item header_megamenu">Industries</li>
+                            <li class="megamenu_item header_megamenu"></li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
@@ -139,61 +142,67 @@
                                     <p>Our team of dedicated professionals is always available to answer questions, provide guidance, and address concerns.</p>
                                 </div>
                             </li>
+                        </ul>
+
+                        <ul class="content">
+                            <li class="megamenu_item header_megamenu"></li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
-                                    <i class='bx bx-group'></i>
+                                    <i class='bx bx-buildings'></i>
                                 </div>
                                 <div class="megamenu_link">
-                                    <a href="">Commercial Real Estate</a>
-                                    <p>Learn more about the amazing group of people that works at Axxs Central.</p>
+                                    <a href="#">Commercial Real Estate</a>
+                                    <p>We are a team of passionate professionals dedicated to providing exceptional services and memorable customer experiences.</p>
                                 </div>
                             </li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
-                                    <i class='bx bx-group'></i>
+                                    <i class='bx bx-store-alt'></i>
                                 </div>
                                 <div class="megamenu_link">
-                                    <a href="">Real Estate Agents</a>
-                                    <p>Learn more about the amazing group of people that works at Axxs Central.</p>
+                                    <a href="">Property Investors</a>
+                                    <p>To change lives and provide excellent service. </p>
                                 </div>
                             </li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
-                                    <i class='bx bx-group'></i>
+                                    <i class='bx bx-trending-up'></i>
                                 </div>
                                 <div class="megamenu_link">
-                                    <a href="">Lenders</a>
-                                    <p>Learn more about the amazing group of people that works at Axxs Central.</p>
+                                    <a href="">Developers</a>
+                                    <p>Empower our customers and communities throughout our country by leveraging a talented global workforce, supported by world-class technologies.</p>
                                 </div>
                             </li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
-                                    <i class='bx bx-group'></i>
+                                    <i class='bx bx-line-chart'></i>
                                 </div>
                                 <div class="megamenu_link">
-                                    <a href="">Leasing Agents</a>
-                                    <p>Learn more about the amazing group of people that works at Axxs Central.</p>
+                                    <a href="">Brokers</a>
+                                    <p>Our team of dedicated professionals is always available to answer questions, provide guidance, and address concerns.</p>
                                 </div>
                             </li>
                         </ul>
                     </div>
                 </li>
+                <!-- Industries dropdown -->
 
-                <li class="nav_item dropdown">
+                <!-- Services dropdown -->
+                <li class="nav_item nav_item_title dropdown">
                     <a href="#" class="nav_link dropdown_link">Services
                     </a>
 
                     <div class="megamenu">
                         <ul class="content">
-                            <li class="megamenu_item header_megamenu">Services</li>
+                            <li class="megamenu_item header_megamenu"></li>
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
-                                    <i class='bx bx-bulb'></i>
+                                    <i class='bx bx-support'></i>
                                 </div>
                                 <div class="megamenu_link">
                                     <a href="#">Contact Center</a>
@@ -203,7 +212,7 @@
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
-                                    <i class='bx bx-user'></i>
+                                    <i class='bx bx-phone-outgoing'></i>
                                 </div>
                                 <div class="megamenu_link">
                                     <a href="">Call Center</a>
@@ -213,7 +222,7 @@
 
                             <li class="megamenu_item">
                                 <div class="menu_icon">
-                                    <i class='bx bx-glasses' ></i>
+                                    <i class='bx bx-phone-incoming' ></i>
                                 </div>
                                 <div class="megamenu_link">
                                     <a href="">Answering Service</a>
@@ -223,15 +232,18 @@
                         </ul>
                     </div>
                 </li>
-
-                <li class="nav_item">
+                <!-- Services dropdown -->
+                
+                <!-- Contact -->
+                <li class="nav_item nav_item_title">
                     <a href="#" class="nav_link">Contact</a>
                 </li>
+                <!-- Contact -->
             </ul>
         </nav>
     </header>
 
-    <script src="./assets/index.js"></script>
+    <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

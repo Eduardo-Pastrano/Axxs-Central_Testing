@@ -2,14 +2,11 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1200px;
-    height: 4.5rem;
+    height: 5rem;
     padding: 0 1rem;
     margin: 0 auto;
-    z-index: 999;
 
     .logo {
-
         a {
             font-size: 1.75rem;
             font-weight: 700;
@@ -18,11 +15,10 @@ nav {
     }
 
     .nav_list {
-        display: flex;
 
         .nav_item {
             margin: 0 1.5rem;
-            padding: 1.4rem 0;
+            padding: 0.8rem 0;
 
             .megamenu {
                 position: absolute;
@@ -31,12 +27,27 @@ nav {
                 left: 0;
                 background-color: $header-color;
                 display: flex;
-                justify-content: center;
+                justify-content: start;
                 border-radius: 0 0 20px 20px;
                 box-shadow: 0 23px 23px -21px rgb(0, 0, 0, 0.25);
                 z-index: -99;
                 visibility: hidden;
                 opacity: 0;
+
+                @media screen and (max-width: 992px) {
+                    justify-content: start;
+                    flex-wrap: wrap;
+                }
+
+                @media screen and (max-width: 768px) {
+                    flex-direction: column;
+                    position: static;
+                    box-shadow: none;
+                    border-radius: 0;
+                    height: 0;
+                    max-width: 350px;
+                    overflow: hidden;
+                }
 
                 .content {
                     display: flex;
@@ -60,6 +71,7 @@ nav {
                                 font-weight: 500;
                                 color: $font-color;
                                 transition: 1s ease-out;
+                                font-size: 1rem;
                             }
 
                             a:hover {
@@ -90,16 +102,47 @@ nav {
                 display: flex;
                 align-items: center;
             }
+
+            @media (min-width: 768px) {
+                margin: 0 1.5rem;
+                padding: 1.4rem 0;
+            }
         }
 
         .dropdown:hover .megamenu {
             visibility: visible;
             transition: all 0.3s ease;
             opacity: 1;
+
+            @media screen and (max-width: 768px) {
+                height: 100%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            position: absolute;
+            height: 100vh;
+            width: 100%;
+            left: -100%;
+            max-width: 350px;
+            top: 0;
+            background-color: $header-color;
+            overflow-x: hidden;
+            display: block;
+            transition: 0.3s;
+        }
+
+        @media (min-width: 768px) {
+            display: flex;
         }
     }
 
-    .toggle_menu, .close_menu {
-        display: none;
+    .show_menu {
+        left: 0;
+    }
+
+    @media (min-width: 768px) {
+        max-width: 1400px;
+        z-index: 999;
     }
 }
