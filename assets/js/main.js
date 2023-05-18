@@ -11,3 +11,8 @@ closeMenu.addEventListener('click', () => {
     navMenu.classList.remove('show_menu')
 })
 /* This part is for the functionality of the menu button */
+
+/* Rotate the menu button */
+
+
+/* Rotate the menu button */

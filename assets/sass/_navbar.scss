@@ -9,7 +9,6 @@ nav {
     z-index: 999;
 
     .logo {
-        z-index: 1;
         background-color: $header-color;
 
         a {
@@ -82,9 +81,9 @@ nav {
                             }
 
                             p {
-                                font-size: 0.6875rem;
+                                font-size: 0.8rem;
                                 font-weight: 400;
-                                color: $black-25;
+                                color: $black-50;
                             }
                         }
                     }
