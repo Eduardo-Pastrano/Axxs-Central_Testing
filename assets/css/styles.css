@@ -135,6 +135,9 @@ nav .nav_list .nav_item .dropdown_link {
     padding: 1.4rem 0;
   }
 }
+nav .nav_list .nav_item .megamenu_close {
+  display: none;
+}
 nav .nav_list .dropdown:hover .megamenu {
   visibility: visible;
   transition: all 0.3s ease;

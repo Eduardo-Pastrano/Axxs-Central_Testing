@@ -12,7 +12,7 @@ closeMenu.addEventListener('click', () => {
 })
 /* This part is for the functionality of the menu button */
 
-/* Rotate the menu button */
+/* Toggle megamenu */
 
 
-/* Rotate the menu button */
+/* Toggle megamenu */

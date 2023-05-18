@@ -109,10 +109,14 @@ nav {
                 margin: 0 1.5rem;
                 padding: 1.4rem 0;
             }
+
+            .megamenu_close {
+                display: none;
+            }
         }
 
         .dropdown:hover .megamenu {
-            visibility: visible;
+            visibility:visible ;
             transition: all 0.3s ease;
             opacity: 1;
 
@@ -120,6 +124,8 @@ nav {
                 height: 100%;
             }
         }
+
+        
 
         @media screen and (max-width: 769px) {
             position: absolute;
